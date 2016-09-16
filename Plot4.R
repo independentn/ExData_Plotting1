@@ -48,7 +48,7 @@ library(datasets)
 windows(10,10)
 
 # set matrix dim for plot area
-par(mfrow = c(2, 2))
+par(mfrow = c(2, 2),bg="white")
 #plot up left
 plot(x=data_used$daytime,y=data_used[,3],type="l",ylab="Global Active Power",xlab="")
 

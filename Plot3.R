@@ -38,6 +38,7 @@ data_used$daytime <- as.POSIXct(paste(data_used[,1],data_used[,2]))
 #plot and save as png
 library(datasets)
 windows(10,10)
+par(bg="white")
 plot(x=data_used$daytime, y=data_used[,7],type="l",ylab="Energy sub metering",xlab="",ylim=c(0,38))
 par(new=TRUE)
 plot(x=data_used$daytime, y=data_used[,8],type="l",col="red",ylab="Energy sub metering",xlab="",ylim=c(0,38))
